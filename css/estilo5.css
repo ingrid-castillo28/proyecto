@@ -1,0 +1,137 @@
+* Estilos de la Página con CSS3*/
+body
+{
+background: #ff6098; /* color de fondo de la página*/
+font-family: Arial;
+font-size: 11px;
+width: 1200px;
+margin: auto;
+}
+/*Estilo de la imagen*/
+#imagenlogo
+{
+background: url(../imagenes/pngegg.png) no-repeat
+left;
+background-size: 30%;
+/*Agregaremos un padding*/
+padding: 20em 0em 0em 0em;
+text-transform: uppercase;
+}
+/*Estilo - color para la Etiqueta "a" incluida en H1*/
+/*PÁGINA WEB*/
+#imagenlogo h1 a
+{
+margin-left: 850px;
+padding: 0em 0em 0em 0em;
+text-decoration: none;
+font-size: 2em;
+font-weight: bold; 
+color: #0d8a6b;
+}
+
+#subtitulo
+{
+padding: 0em;
+margin-left: 950px;
+font-size: 2em;
+color: #948df7;
+}
+
+.navegacion{
+width: 1230px;
+margin: 3px auto;
+background: rgb(24, 4, 73);
+}
+.navegacion ul{
+list-style: none;
+}
+.menu > li{
+position: relative;
+display: inline-block;
+}
+/* opciones - palabras del menú*/
+.menu > li > a{
+display: block;
+padding: 15px 20px;
+color: #fdfcfc;
+font-family: tahoma;
+text-decoration: none;
+}
+/* Efecto al pasar el puntero sobre las opciones del 
+menú*/
+.menu li a:hover{
+color: #e9f810;
+transition: all .3s;
+}
+/* Submenu*/
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    }
+    .submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+    }
+    .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    }
+    /*Estilo - color para la seccion que muestra el 
+    contenido*/
+    #seccion
+    {
+    width: 1150px;
+    padding: 20px 40px;
+    background: #FFF;
+    height: 520px;
+    }
+    /*Estilo para la imagen que se encuentra dentro de la 
+    seccion*/
+    #imagen
+    {
+    margin-top: 0em;
+    margin-left: 320px;
+width: 330px;
+height: 250px;
+text-align: center;
+}
+/*Estilo - color para el titulo dentro de la seccion*/
+#subtitulo2
+{
+font-family: tahoma, Geneva, sans-serif;
+font-size: 30px;
+color: #030303;
+}
+/*estilo y color para el texto del footer de la página 
+web */
+#footer{
+text-align: center;
+border: 12px;
+background-color: #410155;
+width: 1200px;
+padding: 15px;
+}
+
+p{
+font-family: tahoma;
+font-size: 14pt;
+color:black;
+}
+
+a{
+font-family: tahoma;
+font-size: 14pt;
+}
+
+#piepagina{
+    font-family: Arial;
+font-size: 14pt;
+color:rgb(255, 255, 255);
+}

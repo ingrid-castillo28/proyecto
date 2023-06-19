@@ -1,0 +1,104 @@
+* {
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.5s linear;
+}
+    
+html {
+    font: 16px sans-serif;
+    color: #fff;
+    background: #a2ef80;
+}
+    
+main {
+    max-width: 100%;
+    width: 98%;
+    margin: 1vh auto;
+    font-size: 1.2em;
+    background: rgba(219, 33, 33, 0.1);
+    text-align: center;
+}
+    
+header,nav,section,article,aside,footer,#contenido {
+    outline: 1px solid rgba(255,255,255,0.1);
+    padding: 1%;
+    margin: 1% 0; 
+}
+    
+header,nav,section,footer,#contenido {
+    background: rgba(0,0,0,0.1);
+}
+    
+article,aside {
+    background: rgba(255,0,0,0.1);
+}
+    
+header {
+    height: 100px;
+}
+nav,footer{
+    min-height: 50px;
+}
+article {
+    text-align: left;
+}
+section,aside {
+    min-height: 15vh;
+}
+
+ul{
+    list-style: none;
+    max-width: 75%;
+    margin: 0 auto;
+}
+ul li{
+    margin: 2px;
+    padding: 2px 14px;
+    background: rgba(255,0,0,0.1);
+}
+
+p:before {
+    content: "<";
+}
+
+p:after{
+content: ">"
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Hacer responsive la página web*/
+@media all and (min-width: 768px){
+    main{
+        max-width: 1000px;
+        background: rgba(0,0,255,0.1);
+    }
+    section{
+        float:left;
+        width: 66%;
+        margin-right: 1%;
+    }
+    article{
+        float:left;
+        width: 50%;
+    }
+    aside{
+        float: left;
+        width: 33%;
+    }
+    section,aside {
+        min-height: 25vh;
+    }
+    /* menú responsive */
+    ul{
+        float:right;
+    }
+    ul li{
+        display: inline-block;
+    }
+}       
